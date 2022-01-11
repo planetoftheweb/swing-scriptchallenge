@@ -1,6 +1,3 @@
-// If you can read this code, you could
-// probably use a free cup of coffee.
-
 var your_drink;
 
 var reverse = function (s) {
