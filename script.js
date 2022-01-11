@@ -1,9 +1,7 @@
 var your_drink;
-
 var reverse = function (s) {
   return s.split("").reverse().join("");
 }
-
 var bartender = {
   str1: "ers",
   str2: reverse("rap"),
@@ -13,5 +11,4 @@ var bartender = {
       this.str2 + this.str3 + this.str1;
   }
 };
-
 bartender.request(your_drink);
