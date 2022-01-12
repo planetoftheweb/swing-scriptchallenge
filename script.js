@@ -1,14 +1,14 @@
-var your_drink;
-var reverse = function (s) {
-  return s.split("").reverse().join("");
-}
+var your_drink = "";
 var bartender = {
   str1: "ers",
-  str2: reverse("rap"),
+  str2: "rap",
   str3: "amet",
+  reverse: function (myString) {
+    return myString.split("").reverse().join("");
+  },
   request: function (preference) {
     return preference + ".Secret word: " +
-      this.str2 + this.str3 + this.str1;
+      this.reverse(this.str2) + this.str3 + this.str1;
   }
 };
-bartender.request(your_drink);
+console.log(bartender.request(your_drink));
